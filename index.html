@@ -3,38 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Property Management Consulting</title>
+  <title>DoorLab — AI Automation for Property Management</title>
+  <meta name="description" content="DoorLab builds AI voice agents, chatbots, and workflow automation for small and mid-sized property management teams. Book a free 15-min consultation.">
+
+  <meta property="og:title" content="DoorLab — AI Automation for Property Management">
+  <meta property="og:description" content="AI voice agents, chatbots, and workflow automation for small property management teams.">
+  <meta property="og:url" content="https://doorlab.io">
+  <meta property="og:type" content="website">
+  <!-- TODO: add /assets/og-image.png (1200x630) for full social-card support -->
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0a0f1c">
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="canonical" href="https://doorlab.io/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+
+  <script>
+    // Replace with the real GA4 Measurement ID once provisioned (e.g. 'G-AB12CD34EF')
+    window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+  </script>
 </head>
 <body>
-  <header>
-    <h1>Property Management Consulting</h1>
-    <p>Helping landlords and property managers run better operations.</p>
+
+  <header class="site-nav">
+    <a class="logo" href="#top">
+      <svg class="logo-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M5 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H5V3zm2 2v14h8a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7zm6 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+      </svg>
+      <span>DoorLab</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="https://calendly.com/caleb-doorlab" target="_blank" rel="noopener">Book a call</a>
   </header>
 
-  <section id="services">
-    <h2>Services & Pricing</h2>
-    <div class="package">
-      <h3>Starter — $250</h3>
-      <p>One-hour strategy call + written action plan.</p>
-    </div>
-    <div class="package">
-      <h3>Growth — $750</h3>
-      <p>Three sessions + operations audit + tenant-communication templates.</p>
-    </div>
-    <div class="package">
-      <h3>Full Advisory — $2,000/mo</h3>
-      <p>Monthly retainer with ongoing support and reviews.</p>
-    </div>
-  </section>
+  <main>
 
-  <section id="book">
-    <h2>Book a Consultation</h2>
-    <a class="cta" href="https://calendly.com/your-handle/intro" target="_blank">Schedule a free intro call</a>
-  </section>
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <span class="hero-eyebrow">AI for Property Management</span>
+        <h1>Replace manual ops with<br><span class="accent">AI Agents</span> that work 24/7</h1>
+        <p class="hero-sub">DoorLab builds intelligent agents for leasing, maintenance, and tenant communications &mdash; so small property management teams can scale without scaling headcount.</p>
+        <div class="hero-cta-group">
+          <a class="btn btn-primary" href="https://calendly.com/caleb-doorlab" target="_blank" rel="noopener">
+            Book a Free 15-min Consultation
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </a>
+          <a class="link-secondary" href="#pricing">See pricing &rarr;</a>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2026 Your Name. Contact: caleboneil@gmail.com</p>
+    <section class="services section" id="services">
+      <div class="section-inner">
+        <header class="section-header">
+          <h2>What we build</h2>
+          <p>Four ways to put AI to work in your portfolio.</p>
+        </header>
+
+        <div class="service-grid">
+
+          <article class="service-card service-featured">
+            <span class="service-tag">Most requested</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3>AI Voice Agents</h3>
+            <p class="service-tagline">Never miss an after-hours call.</p>
+            <p>Custom voice agents that answer your phone nights, weekends, and holidays. They triage maintenance, qualify leasing inquiries, and route emergencies to a real person &mdash; without the cost of a 24/7 call center.</p>
+            <ul class="service-bullets">
+              <li>24/7 phone coverage with natural conversation</li>
+              <li>Maintenance triage with priority and dispatch logic</li>
+              <li>After-hours leasing inquiries and tour requests</li>
+              <li>Live handoff for emergencies</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Tenant Chatbots</h3>
+            <p class="service-tagline">Always-on text and web support.</p>
+            <p>Chatbots that resolve everyday tenant questions instantly &mdash; from rent payments to amenity hours to maintenance status &mdash; across web, SMS, and tenant portals.</p>
+            <ul class="service-bullets">
+              <li>Maintenance request triage and routing</li>
+              <li>Lease, payment, and amenity FAQs</li>
+              <li>Showing inquiries with calendar handoff</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h3>Workflow Automation</h3>
+            <p class="service-tagline">The repetitive work, on autopilot.</p>
+            <p>Replace spreadsheets, email chains, and manual reminder systems with workflows that run themselves. Faster lease renewals, cleaner rent collection, fewer dropped balls.</p>
+            <ul class="service-bullets">
+              <li>Lease renewal reminders and tenant screening</li>
+              <li>Rent collection nudges and payment routing</li>
+              <li>Vendor coordination and work-order tracking</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Leasing &amp; Ops Agents</h3>
+            <p class="service-tagline">Your leasing team's quiet co-worker.</p>
+            <p>AI agents that qualify prospects, schedule showings, and generate move-in docs &mdash; so your team focuses on closing leases and keeping owners happy.</p>
+            <ul class="service-bullets">
+              <li>Lead qualification and prospect screening</li>
+              <li>Showing scheduling with two-way calendar sync</li>
+              <li>Lease and move-in document generation</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing section" id="pricing">
+      <div class="section-inner">
+        <header class="section-header">
+          <h2>Pricing</h2>
+          <p>Start small with a productized plan, or scope a custom build with us. Every engagement begins with a free 15-min consultation.</p>
+        </header>
+
+        <div class="pricing-grid">
+
+          <article class="price-card">
+            <div class="price-name">Starter</div>
+            <div class="price-amount">$500<span class="price-cadence">/month</span></div>
+            <p class="price-blurb">A productized monthly plan to put your first AI agent or automation to work. Live in 30 days. Cancel anytime.</p>
+            <ul class="price-features">
+              <li>One AI agent or workflow &mdash; you pick</li>
+              <li>Monthly tuning and performance review</li>
+              <li>Email support</li>
+              <li>30-day pilot, no long-term contract</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="https://calendly.com/caleb-doorlab" target="_blank" rel="noopener">Book a Consultation</a>
+          </article>
+
+          <article class="price-card price-card-feature">
+            <div class="price-name">Custom Build</div>
+            <div class="price-amount price-amount-custom">Tailored to your portfolio</div>
+            <p class="price-blurb">For voice systems, multi-agent rollouts, or anything beyond a single workflow &mdash; we scope, build, and maintain it together. Pricing is quoted after a free 15-min consultation, based on scope.</p>
+            <ul class="price-features">
+              <li>Voice agents and multi-agent systems</li>
+              <li>Custom integrations with your existing stack</li>
+              <li>Audit-ready compliance logs</li>
+              <li>Ongoing optimization and dedicated support</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="https://calendly.com/caleb-doorlab" target="_blank" rel="noopener">Book a Consultation</a>
+          </article>
+
+        </div>
+
+        <p class="pricing-reassurance">No commitment. No sales pressure. We'll help you figure out if AI is the right fit before quoting anything.</p>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-inner">
+        <header class="section-header">
+          <h2>Let's talk</h2>
+          <p>Book a free 15-minute consultation, or send a note. We'll respond within one business day.</p>
+        </header>
+
+        <div class="contact-card">
+          <p class="contact-about">DoorLab is an AI consulting agency for small and mid-sized property management teams. We design, build, and maintain automation that handles the repetitive work &mdash; so your team can focus on tenants, owners, and growth.</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="https://calendly.com/caleb-doorlab" target="_blank" rel="noopener">
+              Book a Free 15-min Consultation
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </a>
+            <a class="link-secondary" href="mailto:caleb@doorlab.io">caleb@doorlab.io</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-mark">DoorLab</span>
+        <span class="footer-tag">AI Automation for Property Management</span>
+      </div>
+      <div class="footer-meta">
+        <a href="mailto:caleb@doorlab.io">caleb@doorlab.io</a>
+        <a href="https://calendly.com/caleb-doorlab" target="_blank" rel="noopener">Book a consultation</a>
+        <span class="footer-copy">&copy; 2026 DoorLab</span>
+      </div>
+    </div>
+
+    <div class="consent-bar" id="consentBar" hidden>
+      <p>This site uses cookies for anonymous analytics.</p>
+      <div class="consent-actions">
+        <button type="button" id="consentDecline" class="consent-btn consent-btn-secondary">Decline</button>
+        <button type="button" id="consentAccept" class="consent-btn">Accept</button>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
