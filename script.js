@@ -9,23 +9,14 @@
   var stored = null;
   try { stored = localStorage.getItem(STORAGE_KEY); } catch (e) { /* storage blocked */ }
 
-  function loadGA() {
-    var id = window.GA_MEASUREMENT_ID;
-    if (!id || id.indexOf('G-XXXXXX') === 0) return;
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id);
-    document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { window.dataLayer.push(arguments); }
-    window.gtag = gtag;
-    gtag('js', new Date());
-    gtag('config', id, { anonymize_ip: true });
+  function updateConsent(granted) {
+    if (typeof window.gtag !== 'function') return;
+    window.gtag('consent', 'update', {
+      analytics_storage: granted ? 'granted' : 'denied'
+    });
   }
 
-  if (stored === 'accepted') {
-    loadGA();
-  } else if (stored !== 'declined' && consentBar) {
+  if (stored !== 'accepted' && stored !== 'declined' && consentBar) {
     consentBar.hidden = false;
   }
 
@@ -33,13 +24,14 @@
     acceptBtn.addEventListener('click', function () {
       try { localStorage.setItem(STORAGE_KEY, 'accepted'); } catch (e) {}
       if (consentBar) consentBar.hidden = true;
-      loadGA();
+      updateConsent(true);
     });
   }
   if (declineBtn) {
     declineBtn.addEventListener('click', function () {
       try { localStorage.setItem(STORAGE_KEY, 'declined'); } catch (e) {}
       if (consentBar) consentBar.hidden = true;
+      updateConsent(false);
     });
   }
 })();
