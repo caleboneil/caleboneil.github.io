@@ -504,6 +504,7 @@ a { color: inherit; }
 }
 
 /* Cookie consent */
+.consent-bar[hidden] { display: none; }
 .consent-bar {
   position: fixed;
   bottom: 16px;
