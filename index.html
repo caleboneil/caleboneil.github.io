@@ -265,26 +265,85 @@
     <section class="book section" id="book">
       <div class="section-inner">
         <header class="section-header">
-          <h2>Book a discovery call</h2>
-          <p>30 minutes. No pitch. You walk me through how your team works &mdash; I&rsquo;ll send a custom proposal within two business days.</p>
+          <span class="section-eyebrow">Step 01 &middot; Discovery call</span>
+          <h2>Book a 30-minute call.<br><span class="muted-strong">No pitch. No pressure.</span></h2>
+          <p>You walk me through how your team works today. I&rsquo;ll send a custom proposal &mdash; scope, timeline, and exact price &mdash; within two business days.</p>
         </header>
 
-        <div class="book-card">
-          <!-- Calendly inline widget begin -->
-          <div
-            class="calendly-inline-widget"
-            data-url="https://calendly.com/caleb-doorlab?hide_event_type_details=1&hide_gdpr_banner=1&background_color=111a2e&text_color=e2e8f0&primary_color=2dd4bf"
-            style="min-width:320px;height:720px;"></div>
-          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-          <!-- Calendly inline widget end -->
+        <div class="book-shell">
+          <aside class="book-aside">
+            <div class="host">
+              <div class="host-avatar" aria-hidden="true">C</div>
+              <div class="host-meta">
+                <div class="host-name">Caleb O&rsquo;Neil</div>
+                <div class="host-role">Founder &middot; DoorLab</div>
+              </div>
+            </div>
 
-          <p class="book-fallback">
-            Trouble with the calendar? Email
-            <a href="mailto:caleb@doorlab.io">caleb@doorlab.io</a>
-            or
-            <a href="https://calendly.com/caleb-doorlab" target="_blank" rel="noopener">open it in a new tab</a>.
-          </p>
+            <ul class="book-points">
+              <li>
+                <svg class="check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>
+                <div>
+                  <strong>30 minutes, no pitch.</strong>
+                  You talk, I listen. Walk me through how your team operates today.
+                </div>
+              </li>
+              <li>
+                <svg class="check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>
+                <div>
+                  <strong>Custom proposal in 2 business days.</strong>
+                  Recommended scope, timeline, and exact price &mdash; written down.
+                </div>
+              </li>
+              <li>
+                <svg class="check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>
+                <div>
+                  <strong>Direct, not delegated.</strong>
+                  You&rsquo;re booking with me &mdash; not an SDR, not an account manager.
+                </div>
+              </li>
+            </ul>
+
+            <div class="book-trust">
+              <div class="trust-row">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="M10 6v4l3 2"/></svg>
+                <span>Free. No card. No commitment.</span>
+              </div>
+              <div class="trust-row">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h9"/></svg>
+                <span>Your calendar, your time zone &mdash; auto-detected.</span>
+              </div>
+              <div class="trust-row">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l6 5 6-5"/><rect x="3" y="5" width="14" height="11" rx="2"/></svg>
+                <span>Calendar invite + Google Meet link sent instantly.</span>
+              </div>
+            </div>
+          </aside>
+
+          <div class="book-scheduler">
+            <!--
+              Cal.com inline embed
+              Theming + Cal.com bootstrap script lives at the bottom of <body>.
+              Booking link: cal.com/caleb-o-neil-uopu7o/discovery-call
+            -->
+            <div class="scheduler-frame" id="schedulerFrame">
+              <div class="cal-inline" id="cal-inline"></div>
+              <div class="scheduler-placeholder" role="status">
+                <div class="scheduler-placeholder-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M8 3v4M16 3v4"/><path d="M8 14h2M14 14h2M8 17h2M14 17h2"/></svg>
+                </div>
+                <p class="scheduler-placeholder-title">Loading calendar&hellip;</p>
+                <p class="scheduler-placeholder-sub">If the calendar doesn&rsquo;t appear in a moment, email <a href="mailto:caleb@doorlab.io">caleb@doorlab.io</a> and we&rsquo;ll get something on the books.</p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <p class="book-fallback">
+          Prefer email? Reach me at
+          <a href="mailto:caleb@doorlab.io">caleb@doorlab.io</a>
+          and I&rsquo;ll find a time that works.
+        </p>
       </div>
     </section>
 
@@ -311,6 +370,41 @@
       </div>
     </div>
   </footer>
+
+  <!-- Cal.com inline embed bootstrap -->
+  <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "Cal");
+
+    Cal("init", { origin: "https://cal.com" });
+
+    Cal("inline", {
+      elementOrSelector: "#cal-inline",
+      config: { layout: "month_view", theme: "dark" },
+      calLink: "caleb-o-neil-uopu7o/discovery-call"
+    });
+
+    Cal("ui", {
+      theme: "dark",
+      cssVarsPerTheme: {
+        light: { "cal-brand": "#0d9488" },
+        dark: {
+          "cal-brand": "#2dd4bf",
+          "cal-brand-emphasis": "#5eead4",
+          "cal-brand-text": "#022c2a"
+        }
+      },
+      hideEventTypeDetails: false,
+      layout: "month_view"
+    });
+
+    Cal("on", {
+      action: "linkReady",
+      callback: function () {
+        var frame = document.getElementById("schedulerFrame");
+        if (frame) frame.classList.add("is-live");
+      }
+    });
+  </script>
 
   <script src="script.js"></script>
 </body>
